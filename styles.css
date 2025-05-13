@@ -10,7 +10,7 @@ body {
 
 /* Hero Section Styles for Index Page */
 header.hero.index-hero {
-    background: url('../images/futuristic-business-scene-with-ultra-modern-ambiance.jpg') no-repeat center center;
+    background: url('images/futuristic-business-scene-with-ultra-modern-ambiance.jpg') no-repeat center center;
     background-size: cover; /* Ensure the image covers the entire header */
     color: #ffffff;
     text-align: center;
