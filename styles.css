@@ -1,0 +1,799 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section Styles for Index Page */
+header.hero.index-hero {
+    background: url('../images/futuristic-business-scene-with-ultra-modern-ambiance.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the image covers the entire header */
+    color: #ffffff;
+    text-align: center;
+    padding: 200px 20px; /* Increase padding to accommodate the full image */
+    position: relative;
+}
+
+header.hero.index-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Add a dark overlay for better text visibility */
+    z-index: 1;
+}
+
+header.hero.index-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Slogan Styles for Index Page */
+header.hero.index-hero .slogan {
+    font-size: 1.5rem; /* Keep the font size large for visibility */
+    font-style: italic;
+    color: #ffffff; /* Ensure the text is white for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a strong text shadow for better readability */
+    margin-top: 10px;
+}
+
+/* General Hero Section Styles for Other Pages */
+header.hero {
+    background: #35424a; /* Match the navigation bar color */
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px; /* Reduce padding for a smaller header */
+    position: relative;
+}
+
+header.hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+header.hero h1 {
+    font-size: 2rem; /* Adjust font size for smaller headers */
+    margin: 0;
+}
+
+/* Slogan Styles for Other Pages */
+header.hero .slogan {
+    font-size: 1.2rem; /* Increase font size for better visibility */
+    font-style: italic;
+    color: #f4f4f4; /* Light text color for contrast against the dark header */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Add a subtle text shadow for better readability */
+    margin-top: 10px;
+    display: inline-block; /* Ensure the slogan text is wrapped neatly */
+}
+
+/* Slogan Styles */
+header .slogan {
+    text-align: center; /* Center the text horizontally */
+    font-size: 1.2rem; /* Adjust the font size for better visibility */
+    color: #555; /* Optional: Change the color for better contrast */
+    margin-top: 10px; /* Add spacing above the slogan */
+}
+
+/* Navigation Bar Styles */
+nav {
+    background: #2c3e50; /* Darker background to distinguish it from the header */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow to separate it from the header */
+    border-bottom: 2px solid #1abc9c; /* Add a border for a clear distinction */
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #1abc9c; /* Highlight the link on hover */
+}
+
+/* General Section Styles */
+section {
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #35424a;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Call-to-Action Styles */
+.cta {
+    background: #2c3e50; /* Darker background for better contrast */
+    color: #f4f4f4; /* Light text color for better readability */
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* Ensure the heading is clearly visible */
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #dcdcdc; /* Slightly lighter text for better readability */
+}
+
+.cta-button {
+    background: #1abc9c; /* Bright button color for emphasis */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #16a085; /* Slightly darker hover effect */
+}
+
+/* Footer Styles */
+footer {
+    background: #2c3e50; /* Matches the contact section background */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+footer #contact {
+    margin-top: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background: none; /* Removes the separate background for the contact section */
+    border-radius: 0; /* Removes rounded corners */
+    box-shadow: none; /* Removes the shadow */
+}
+
+footer #contact h3 {
+    font-size: 1.5rem;
+    color: #f4f4f4;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+footer #contact p {
+    font-size: 1rem;
+    margin: 8px 0;
+    color: #dcdcdc;
+    line-height: 1.6;
+}
+
+footer #contact p::before {
+    content: "• ";
+    color: #f4f4f4;
+    font-weight: bold;
+}
+
+footer #contact a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer #contact a:hover {
+    text-decoration: underline;
+}
+
+/* Services Page Styles */
+.services-list {
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.services-list h2 {
+    font-size: 2rem;
+    color: #35424a;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+}
+
+.services-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-list ul li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.services-list ul li h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.services-list ul li p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Key Advisory Areas Section Styles */
+.key-advisory {
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.key-advisory h2 {
+    font-size: 2rem;
+    color: #35424a;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+}
+
+.key-advisory ul {
+    list-style: none;
+    padding: 0;
+}
+
+.key-advisory ul li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.key-advisory ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.key-advisory ul li h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.key-advisory ul li p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Social Security Section Styles */
+.social-security {
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.social-security h2 {
+    font-size: 2rem;
+    color: #35424a;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+}
+
+.social-security h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+.social-security ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-security ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Section Specific Styles */
+.skills ul li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    background: #e8f5e9;
+    color: #2e7d32;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills ul li:hover {
+    background: #c8e6c9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Vision & Mission Section Specific Styles */
+.vision-mission {
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    text-align: center;
+}
+
+.vision-mission h2 {
+    font-size: 2rem;
+    color: #35424a;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+}
+
+.vision-mission p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.vision-mission p strong {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* Team Section Styles */
+.team-section {
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    color: #35424a;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px;
+}
+
+/* CEO Card */
+.ceo-card {
+    margin-bottom: 20px; /* Add spacing below the CEO card */
+    width: 300px; /* Optional: Make the CEO card larger */
+    text-align: center;
+}
+
+/* Other Team Members Container */
+.other-team-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange items in a single row */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Add spacing between the cards */
+    flex-wrap: wrap; /* Allow wrapping to a new row if needed on smaller screens */
+}
+
+/* Team Card */
+.team-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Icon */
+.profile-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Team Highlight Section Styles */
+.team-highlight {
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    text-align: center;
+}
+
+.team-highlight h2 {
+    font-size: 2rem;
+    color: #35424a;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.profile-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Timeline Section Styles */
+.timeline {
+    background: #f9f9f9;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+.timeline h2 {
+    font-size: 2rem;
+    color: #35424a;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+}
+
+.timeline ul {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline ul li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline ul li h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.timeline ul li p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Contact Information Section */
+.contact-info {
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    color: #35424a;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    font-size: 1.2rem;
+    color: #555;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contact-item p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.contact-item strong {
+    color: #2c3e50;
+}
+
+/* Contact Form Section */
+.contact-form {
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    color: #35424a;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #1abc9c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+}
+
+.contact-form .submit-button {
+    background: #1abc9c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form .submit-button:hover {
+    background: #16a085;
+}
+
+/* Taglines Section */
+.taglines {
+    background: #f9f9f9;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    text-align: center;
+}
+
+.taglines h2 {
+    font-size: 2rem;
+    color: #35424a;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+}
+
+.taglines ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.taglines ul li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Map Section */
+.map {
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.map h2 {
+    font-size: 2rem;
+    color: #35424a;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header.hero h1 {
+        font-size: 2rem;
+    }
+
+    header.hero .slogan {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p, section ul {
+        font-size: 0.9rem;
+    }
+
+    .services-list {
+        padding: 15px;
+    }
+
+    .services-list h2 {
+        font-size: 1.8rem;
+    }
+
+    .services-list ul li h3 {
+        font-size: 1.3rem;
+    }
+
+    .services-list ul li p {
+        font-size: 0.9rem;
+    }
+}
